@@ -6,6 +6,7 @@ Padrino-rhion
 
 Padrino 
 -------
+[Padrino] && [Padrino on github]
 [Padrino]: http://padrinorb.com
 [Padrino on github]: https://github.com/padrino/padrino-framework
 
