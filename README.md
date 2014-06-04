@@ -6,7 +6,8 @@ Padrino-rhion
 
 Padrino 
 -------
-[http://padrinorb.com]
+[Padrino]: http://padrinorb.com
+[Padrino on github]: https://github.com/padrino/padrino-framework
 
 可视化
 ------
