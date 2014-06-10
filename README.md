@@ -20,3 +20,9 @@ Padrino包含gen-template功能，我们将基于Web方式来扩展此项功能�
 - Web可视化管理界面
 - 定义控制流、模型、事件等，以及json描述方式
 - 代码具有可读、可再编辑性、可持续发布性
+
+
+运行
+------------
+    cd padrino-rhion
+    ./bundle exec padrion s
