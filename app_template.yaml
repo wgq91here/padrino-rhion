@@ -31,6 +31,7 @@ data:
         name:
           type: string
           label: 产品名
+          limit: 120
       has_many:
         bugs:
           targetEntity: Bug
