@@ -27,4 +27,5 @@ gem 'multi_json', :platform => [:mingw,:ruby,:jruby]
 
 # gem 'padrino', :github => 'wgq91here/padrino-framework', :branch => 'Cloud-Features'
 # gem 'padrino', :path => 'E:\BitNami\rubystack-2.0.0-12\ruby\lib\ruby\gems\2.0.0\bundler\gems\padrino-framework-9d23925475e5'
-gem 'padrino', :path => 'E:\workspace\padrino-cloud'
+gem 'padrino', :path => 'D:\GitHub\padrino-framework-cloud'
+#gem 'padrino', :path => 'E:\workspace\padrino-cloud'
