@@ -53,15 +53,16 @@ data:
           type: datetime
           label: 创建日期
         status:
-          type: [reported,fixing,fixed]
+          type: enum
+          values: [reported,fixing,fixed]
           label: 状态
       belong_to:
         reporter:
-          targetEntity: User
+          target_entity: User
         engineer:
-          targetEntity: User
+          target_entity: User
         products:
-          targetEntity: Product
+          target_entity: Product
 
     User:
       type: entity
@@ -80,11 +81,11 @@ data:
           label: 密码
       has_many:
         reportedBugs:
-          targetEntity: Bug
-          mappedBy: reporter
+          target_entity: Bug
+          mapped_by: reporter
         assignedBugs:
-          targetEntity: Bug
-          mappedBy: engineer
+          target_entity: Bug
+          mapped_by: engineer
 
   collection:
     bugList:
