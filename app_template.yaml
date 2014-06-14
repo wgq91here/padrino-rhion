@@ -78,7 +78,7 @@ data:
           type: string
           label: 姓名
         password:
-          type: password #Add sha1
+          type: string #Add sha1 password
           label: 密码
       has_many:
         reportedBugs:
