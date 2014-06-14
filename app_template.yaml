@@ -13,16 +13,16 @@ config:
 auth:
   type: session
   #plugin: auth_user
-  data_modle: user
+  data_model: user
   data_field: [name,password]
 
 data:
-  # Modle
-  modle:
+  # model
+  model:
     Product:
       type: entity
       table: products
-      id:
+      primary_key:
         id:
           type: integer
           generator:
@@ -40,7 +40,7 @@ data:
     Bug:
       type: entity
       table: bugs
-      id:
+      primary_key:
         id:
           type: integer
           generator:
@@ -67,7 +67,7 @@ data:
     User:
       type: entity
       table: users
-      id:
+      primary_key:
         id:
           type: integer
           generator:
@@ -89,18 +89,18 @@ data:
 
   collection:
     bugList:
-      modle: Bug
+      model: Bug
       select: [products.name, created, status]
       condition: status in ("reported","fixing")
     bugShow:
-      modle: Bug      
+      model: Bug      
       select: [products.name, created, status, reporter.name, engineer.name]
       condition: id = route_param.id
     productList:
-      modle: Product
+      model: Product
       select: [name, created, status]
     productShow:
-      modle: Product      
+      model: Product      
       select: [name, created, status, bugs.*]
       condition: id = route_param.id
 
