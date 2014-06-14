@@ -28,21 +28,21 @@ data:
           type: integer
           generator: AUTO
       fields:
-        pid:
-          type: string
-          label: 产品ID编号
         name:
           type: string
           label: 产品名
           limit: 120
       has_many:
         bugs:
-          targetEntity: Bug
-          mappedBy: products
+          target_entity: Bug
+      belong_to:
+        owner:
+          target_entity: User
 
     Bug:
       type: entity
       table: bugs
+      force: true
       primary_key:
         id:
           type: integer
@@ -69,6 +69,7 @@ data:
     User:
       type: entity
       table: users
+      force: true
       primary_key:
         id:
           type: integer
