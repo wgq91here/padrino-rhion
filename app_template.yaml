@@ -22,12 +22,15 @@ data:
     Product:
       type: entity
       table: products
-      primary_key:
-        id:
+      force: true
+      primary_key: 
+        pid:
           type: integer
-          generator:
-            strategy: AUTO
+          generator: AUTO
       fields:
+        pid:
+          type: string
+          label: 产品ID编号
         name:
           type: string
           label: 产品名
@@ -43,8 +46,7 @@ data:
       primary_key:
         id:
           type: integer
-          generator:
-            strategy: AUTO
+          generator: AUTO
       fields:
         description:
           type: text
@@ -53,8 +55,8 @@ data:
           type: datetime
           label: 创建日期
         status:
-          type: enum
-          values: [reported,fixing,fixed]
+          type: string
+          #values: [reported,fixing,fixed]
           label: 状态
       belong_to:
         reporter:
@@ -70,8 +72,7 @@ data:
       primary_key:
         id:
           type: integer
-          generator:
-            strategy: AUTO
+          generator: AUTO
       fields:
         name:
           type: string
