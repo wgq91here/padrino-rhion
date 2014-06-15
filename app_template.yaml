@@ -32,6 +32,7 @@ data:
           type: string
           label: 产品名
           limit: 120
+          default: "un known"
       has_many:
         bugs:
           target_entity: Bug
@@ -51,9 +52,6 @@ data:
         description:
           type: text
           label: 解释
-        created:
-          type: datetime
-          label: 创建日期
         status:
           type: string
           #values: [reported,fixing,fixed]
@@ -78,6 +76,9 @@ data:
         name:
           type: string
           label: 姓名
+        email:
+          type: string
+          label: Email
         password:
           type: string #Add sha1 password
           label: 密码
